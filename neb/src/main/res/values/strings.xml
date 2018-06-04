@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">neb</string>
+    <string name="double_exit">再按一次退出应用</string>
+</resources>

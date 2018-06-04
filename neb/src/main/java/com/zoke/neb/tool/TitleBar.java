@@ -22,6 +22,8 @@ public class TitleBar {
     private BaseActivity activity;
     private BaseFragment fragment;
 
+    private TextView tv_title;
+
     private TitleBar() {
     }
 
@@ -35,7 +37,8 @@ public class TitleBar {
 
     //设置title
     public TitleBar setTitle(CharSequence text) {
-        TextView tv_title = getActivity().findViewById(R.id.tv_title);
+        if (tv_title == null)
+            tv_title = getActivity().findViewById(R.id.tv_title);
         tv_title.setText(text);
         return this;
     }

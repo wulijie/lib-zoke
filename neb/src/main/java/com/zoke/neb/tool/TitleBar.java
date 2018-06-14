@@ -62,7 +62,7 @@ public class TitleBar {
             return this;
         }
         iv_left.setVisibility(View.VISIBLE);
-        iv_left.setBackgroundResource(resId);
+        iv_left.setImageResource(resId);
         if (clickListener != null)
             iv_left.setOnClickListener(clickListener);
         if (clickListener == null) {
@@ -83,7 +83,7 @@ public class TitleBar {
             return this;
         }
         iv_right.setVisibility(View.VISIBLE);
-        iv_right.setBackgroundResource(resId);
+        iv_right.setImageResource(resId);
         if (clickListener != null)
             iv_right.setOnClickListener(clickListener);
         return this;
